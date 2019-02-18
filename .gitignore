@@ -1,0 +1,12 @@
+# build
+dist/
+
+# cert
+cert/*.crt
+cert/*.key
+
+# firebase
+.firebase/
+
+# node
+node_modules/

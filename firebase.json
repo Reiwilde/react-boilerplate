@@ -1,0 +1,19 @@
+{
+  "functions": {
+    "predeploy": "cp src/server/package.json dist/server/package.json",
+    "source": "dist/server"
+  },
+  "hosting": {
+    "public": "dist/client",
+    "rewrites": [
+      {
+        "destination": "/public",
+        "source": "/public"
+      },
+      {
+        "function": "app",
+        "source": "**"
+      }
+    ]
+  }
+}
